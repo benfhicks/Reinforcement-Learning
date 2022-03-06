@@ -3,9 +3,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://download.pytorch.org/whl/cu113/"
+verify_ssl = true
+name = "downloadpytorch"
+
 [packages]
 numpy = "*"
 ipykernel = "*"
+install = "*"
+torch = "==1.10.1+cu113"
+sklearn = "*"
 
 [dev-packages]
 
